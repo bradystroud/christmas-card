@@ -1,4 +1,4 @@
-# christmas-card
+# Penny's Christmas card
 
 Hey guys!
 
