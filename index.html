@@ -10,30 +10,18 @@
     <div class="card-container">
       <h1>Merry Christmas Penny!</h1>
       <p class="message">
-      As Enterprise Software Engineers, we've opted for a unique approach.
+        Wishing you all the joy and happiness this festive season. Have a
+        wonderful Christmas!
       </p>
-      <p class="message">
-          Instead of a traditional paper card, we built you a website:
-      </p>
-      <ul class="message">
-          <li>Eco-friendly, no trees harmed.</li>
-          <li>Permanently accessible URL.</li>
-          <li>Shareable with friends.</li>
-      </ul>
-      <p class="message">
-          Wishing you joy and happiness this festive season. Have a wonderful Christmas!
-      </p>
-
       <!-- Colleagues can add their CSS drawings here -->
-      <div id="logo" class="card-container colleague-messages">
-          <div class="tree">
+      <div class="card-container">
+          <div class="tree mw-harlem_shake_me im_first">
             <div class="tree-top"></div>
             <div class="tree-middle"></div>
             <div class="tree-bottom"></div>
             <div class="tree-trunk"></div>
           </div>
-        <p>Sorry for trying to burn things</p>
-        <strong>- Brady</strong>
+        <p>Sorry for trying to burn things - Brady</p>
       </div>
 
       <div class="card-container">
@@ -197,22 +185,16 @@
         </div>
       </div>
 
-    <p>Made with ❤️ by <strong>Brady Stroud</strong></p>
-    <a href="https://github.com/bradystroud/christmas-card" target="_blank">Contribute</a>
-    
+      <div class="colleague-messages">
+        <!-- Example: <p class="colleague-message">Happy Holidays! - Jane</p> -->
+      </div>
 
-      <button id="theBoom" style="position: fixed;bottom:40px;left:20px;background-color: #cc4141;color:#f5f5f5;font-size:30px;border:2px solid #333;" onclick="clickedMe()">
+      <button id="theBoom" style="position: fixed;bottom:20px;right:20px;background-color: #cc4141;color:#f5f5f5;font-size:30px;border:2px solid #333;" onclick="clickedMe()">
 CLICK ME!
       </button>
     <script>
-      let itsOn = false;
       function clickedMe(){
-        if (itsOn)
-        {
-          return;
-        }
-        itsOn = true;
-        window.scrollTo({ top: 0, left: 0});
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         var element = document.getElementById("theBoom");
         var parent = element.parentNode;
         parent.removeChild(element);
@@ -222,7 +204,6 @@ CLICK ME!
         },3000);
         setTimeout(function(){
           element.innerText = "CLICK ME!";
-          itsOn = false;
         },30000);
         setTimeout(function(){
           window.scrollTo({ top: 10000, left: 0, behavior: 'smooth' });
