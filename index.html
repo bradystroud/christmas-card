@@ -3,15 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🎅🏼 Penny's Christmas Card</title>
+    <title>Penny's Christmas Card 🎅🏼</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <div class="card-container">
       <h1>Merry Christmas Penny!</h1>
       <p class="message">
-        Wishing you all the joy and happiness this festive season. Have a
-        wonderful Christmas!
+          Instead of a traditional paper card, we built you a website:
+      </p>
+      <ul class="message">
+          <li>Eco-friendly, no trees harmed.</li>
+          <li>Permanently accessible URL.</li>
+          <li>Shareable with friends.</li>
+      </ul>
+      <p class="message">
+          Wishing you joy and happiness this festive season. Have a wonderful Christmas!
       </p>
       <!-- Colleagues can add their CSS drawings here -->
       <div class="card-container">
@@ -207,11 +231,20 @@
         <!-- Example: <p class="colleague-message">Happy Holidays! - Jane</p> -->
       </div>
 
-      <button id="theBoom" style="position: fixed;bottom:20px;right:20px;background-color: #cc4141;color:#f5f5f5;font-size:30px;border:2px solid #333;" onclick="clickedMe()">
+      <p>Made with ❤️ by <strong>Brady Stroud</strong></p>
+      <a href="https://github.com/bradystroud/christmas-card">Contribute</a>
+
+      <button id="theBoom" style="position: fixed;bottom:30px;left:20px;background-color: #cc4141;color:#f5f5f5;font-size:30px;border:2px solid #333;" onclick="clickedMe()">
 CLICK ME!
       </button>
     <script>
+      let itsOn = false;
       function clickedMe(){
+        if (itsOn)
+        {
+          return;
+        }
+        itsOn = true;
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         var element = document.getElementById("theBoom");
         var parent = element.parentNode;
@@ -222,6 +255,7 @@ CLICK ME!
         },3000);
         setTimeout(function(){
           element.innerText = "CLICK ME!";
+          itsOn = false;
         },30000);
         setTimeout(function(){
           window.scrollTo({ top: 10000, left: 0, behavior: 'smooth' });

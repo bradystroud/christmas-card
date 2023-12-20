@@ -35,13 +35,14 @@ body {
 }
 
 .tree .tree-top {
-    border-bottom: 50px solid green;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    height: 0;
-    width: 50px;
-    position: relative;
     top: -10px;
+    width: 0;
+    height: 0;
+    margin-left: 29px;
+    margin-bottom: -2px;
+    border-left: 55px solid transparent;
+    border-right: 56px solid transparent;
+    border-bottom: 88px solid green;
 }
 
 .tree .tree-middle {
@@ -51,7 +52,8 @@ body {
     height: 0;
     width: 70px;
     position: relative;
-    top: -20px;
+    top: 1px;
+    left: 18px
 }
 
 .tree .tree-bottom {
@@ -60,11 +62,14 @@ body {
     border-right: 45px solid transparent;
     height: 0;
     width: 90px;
+    position: relative;
+    z-index: 2;
+
 }
 
 .tree .tree-trunk {
     background-color: brown;
-    height: 40px;
+    height: 60px;
     width: 20px;
     margin: 0 auto;
     position: relative;
