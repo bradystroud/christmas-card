@@ -62,11 +62,14 @@ body {
     border-right: 45px solid transparent;
     height: 0;
     width: 90px;
+    position: relative;
+    z-index: 2;
+
 }
 
 .tree .tree-trunk {
     background-color: brown;
-    height: 40px;
+    height: 60px;
     width: 20px;
     margin: 0 auto;
     position: relative;
