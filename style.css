@@ -25,3 +25,48 @@ body {
     margin: 10px 0;
     font-style: italic;
 }
+
+
+/* Christmas Tree Styles */
+.tree {
+    display: inline-block;
+    margin: 0 auto;
+    color: green;
+}
+
+.tree .tree-top {
+    border-bottom: 50px solid green;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 50px;
+    position: relative;
+    top: -10px;
+}
+
+.tree .tree-middle {
+    border-bottom: 70px solid green;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    height: 0;
+    width: 70px;
+    position: relative;
+    top: -20px;
+}
+
+.tree .tree-bottom {
+    border-bottom: 90px solid green;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    height: 0;
+    width: 90px;
+}
+
+.tree .tree-trunk {
+    background-color: brown;
+    height: 40px;
+    width: 20px;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+}
