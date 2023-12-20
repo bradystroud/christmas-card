@@ -70,3 +70,57 @@ body {
     position: relative;
     top: -30px;
 }
+
+
+/*
+ * SAMS CSS
+*/
+
+.moustache {
+    width: 100px;
+    height: 20px;
+    background: black;
+    border-radius: 20px/10px;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.moustache::before, .moustache::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 20px/10px;
+    position: absolute;
+    top: 15px;
+}
+
+.moustache::before {
+    left: -30px;
+    transform: rotate(-20deg);
+}
+
+.moustache::after {
+    right: -30px;
+    transform: rotate(20deg);
+}
+
+.text {
+    padding-top: 1rem;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.name {
+    color: #333;
+}
+
+.title {
+    color: #666;
+    font-size: 16px;
+}
