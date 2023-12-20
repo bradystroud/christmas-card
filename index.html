@@ -217,7 +217,13 @@
 CLICK ME!
       </button>
     <script>
+      let itsOn = false;
       function clickedMe(){
+        if (itsOn)
+        {
+          return;
+        }
+        itsOn = true;
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         var element = document.getElementById("theBoom");
         var parent = element.parentNode;
@@ -228,6 +234,7 @@ CLICK ME!
         },3000);
         setTimeout(function(){
           element.innerText = "CLICK ME!";
+          itsOn = false;
         },30000);
         setTimeout(function(){
           window.scrollTo({ top: 10000, left: 0, behavior: 'smooth' });
