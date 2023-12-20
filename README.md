@@ -1,6 +1,6 @@
 # Penny's Christmas card
 
-Hey guys!
+Hey guys! 
 
 This is penny christmas card
 
