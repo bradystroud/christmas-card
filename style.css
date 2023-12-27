@@ -160,3 +160,53 @@ body {
 .message {
     text-align: left;
 }
+
+.hatcontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgray;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.hat {
+    height: 0;
+    width: 0;
+    border-bottom: 100px solid red;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    position: relative;
+}
+.hat::after {
+    content: '';
+    position: absolute;
+    top: 90px;
+    right: -50px;
+    width: 100px;
+    height: 15px;
+    border-radius: 100px;
+    background-color: white;
+}
+.hat__top {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    right: 7px;
+    top: -4px;
+    border-bottom: 50px solid red;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    transform: rotate(-100deg);
+}
+
+.hat__top::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -13px;
+    background: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+}
